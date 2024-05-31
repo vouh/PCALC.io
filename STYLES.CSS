@@ -1,0 +1,580 @@
+*{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.sec1{
+    min-height: 110vh;
+    background-color: black;
+}
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+nav{
+    z-index: 2;
+    padding:20px;
+    position: fixed;
+}
+
+nav {
+    .p{
+        color:rgb(250, 244, 244);
+        font-size: 46px;
+        font-family: "Orbitron", sans-serif;
+        font-weight: bold;
+    }
+
+    .p:hover{
+        color:aqua;
+        cursor:pointer;
+    }
+
+    h1{
+        cursor: pointer;
+        color:aqua;
+        font-size: medium;
+        font-family: "Orbitron", sans-serif;
+        font-size: 30px;
+    }
+
+    h1:hover{
+        color:rgb(19, 243, 79);
+        background-color: rgb(232, 230, 230);
+    }
+}
+
+.links{
+    width: 100%;
+    position: fixed;
+    float:right;
+    z-index: 2;
+
+    ul{
+        margin-top: 50px;
+        margin-left: 1000px;
+     right:0;
+        font-family: "Orbitron", sans-serif;
+    
+        
+    }
+    
+    ul li{
+        font-weight: bold;
+        color:pink;
+        display: inline;
+        padding-right:70px;
+        color:aqua;
+        cursor:pointer;
+        font-size: 30px;
+    }
+
+    ul li:hover{
+        color:white;
+
+    }
+}
+
+.m7{
+    margin-top: 100px;
+   width:50%;
+  float:right;
+}
+
+
+.cop{
+    width:55%;
+padding-left: 100px;
+    color:aqua;
+    margin-top: -470px;
+
+    h1{
+        letter-spacing: 20px;
+font-size: 100px;
+font-weight: bold;
+font-family: "Orbitron", sans-serif;
+    }
+
+    p{
+        color: white;
+        font-family: "Orbitron", sans-serif;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 30px;
+        margin-top: 40px;
+        border:2px solid aqua;
+        background-color: rgb(7, 5, 5);
+        padding: 8px;
+        display: inline-block;
+        font-family: "Orbitron", sans-serif;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    h2:hover{
+        background-color: rgb(247, 235, 235);
+    }
+}
+
+.cp2{
+    color:aqua;
+}
+
+.cp{
+    color:white;
+    animation:cg  0.5s infinite alternate-reverse;
+}
+
+@keyframes cg{
+10%{color:white;}
+30%{color:aqua;}
+60%{color:white;}
+90%{color:aqua;}
+}
+
+.sec2{
+    min-height:130vh;
+    background-image: linear-gradient(to bottom, rgba(13, 13, 31, 0.8),rgba(45, 205, 205,0.9)),url(4.png);
+    position: absolute;
+    width: 100%;
+}
+
+.sec2{ 
+    button{
+    width:90px;
+    height:90px;
+    background-color: rgb(20, 119, 119);
+    color: antiquewhite;
+    border-radius: 50px;
+    border:none;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 25px;
+    z-index:1;
+}
+
+button:hover{
+    background-color: rgb(59, 242, 236);
+    border-radius: 40px;
+}
+
+button:active{
+    background-color: aqua;
+}
+}
+
+#keys{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    width:60%;
+    gap:10px;
+    padding:25px;
+    z-index:2;
+    width:100%;
+}
+
+#display{
+    width:100%;
+    font-size: 50px;
+    text-align: left;
+    border:2px solid aqua;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 25px;
+    background-color: rgba(238, 244, 244, 0.7);
+    color: rgb(6, 8, 4);
+}
+
+.calculator{
+    transform: translate(400px,80px);
+    z-index:1;
+    background-image: url(4.png);
+    color:rgb(246, 235, 235);
+    width:50%;
+    border-radius: 25px;
+    border:2px solid white;
+    background-position: fixed;
+    padding:50px;
+    position:relative;
+    background-color: rgb(241, 226, 226);
+}
+
+.sec1a{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+
+.m2{
+    margin-left: 800px;
+    position: relative;
+    transition: 5s;
+    animation: zg 5s infinite alternate-reverse;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 75px;
+}
+
+@keyframes zg{
+   10%{ margin-left: 800px;} 
+   20%{ margin-left: 800px;}
+   90%{ margin-left: 790px;}
+}
+
+.txp{
+    color:white;
+    transform:translate(100px,-600px) ;
+    z-index: 1;
+    font-size:clamp(50px, 8vw, 100px);
+    font-family: "Orbitron", sans-serif;
+    width: 45%;
+    background-color: black;
+}
+
+.multiText{
+    color:aqua;
+    font-weight: bold; 
+}
+
+.txp{
+    background-color: transparent;
+    h3{
+        font-size:clamp(10px, 4vw, 20px);
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        padding: 15px;
+        background-color: aqua;
+        border-radius: 25px;
+        display: inline;
+        cursor:pointer;
+        transition: 1s;
+    }
+
+    h3:hover{
+        background-color: white;
+}
+}
+
+.icon{
+    margin-top: -40px;
+    margin-bottom: -40px;
+    i{
+        color:aqua;
+        font-size: 30px;
+        border:2px solid white;
+        cursor: pointer;
+        border-radius: 50px;
+        padding:10px ;
+        transition: 1s;
+    }
+
+    i:hover{
+        background-color: white;
+    }
+}
+
+.cx{
+    color:aqua;
+    cursor: pointer;
+    float:right;
+    margin-right:-1000px;
+    transition: 1s;
+}
+
+#sd{
+    display: none;
+}
+#sd:checked ~ .cx{
+    margin-right: 0px;
+}
+
+.mi{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: -750px;
+    padding: 50px;
+gap:10px;
+
+.mk{
+    color:aqua;
+    font-size: 55px;
+}
+    .m1{
+        border: 3px solid white;
+        color:rgb(0, 1, 0);
+        justify-content: space-around;
+        font-size: 26px;
+        background-color: rgba(107, 243, 243,0.6);
+        border-radius: 25px;
+        box-shadow: 2px red burlywood aqua;
+        padding: 15px;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items:center;
+        color:rgb(247, 240, 240);
+        font-family: "Orbitron", sans-serif;
+        background-color: black;
+        border-radius: 25px;
+        font-size: 25px;
+    }
+
+
+    .m1:hover{
+  opacity: 0.9;
+        scale: 1.02;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.ic{
+    color:red;
+    font-size: 500px;
+    color:aqua;
+
+    i{
+        transform: rotateY(50deg);
+    }
+}
+
+.MAP{
+    i{
+        color:green;
+        bottom:0;
+        position: fixed;
+        padding: 15px;
+        cursor: pointer;
+        font-size:80px;
+        margin-top:-300px;
+        border-radius: 25px;
+        background: white;
+        float:right;
+        position: relative;
+        right:0;
+        animation: sc 3s alternate-reverse infinite;
+        transition: 1s;
+    }
+
+    i:hover{
+        background-color: black;
+    }
+}
+
+@keyframes sc{
+    10%{background-color:rgb(5, 2, 2);}
+}
+
+svg {
+    height:90vh;
+    width: 100%;
+  }
+
+  .qc{
+   background-repeat: no-repeat;
+ background-image: url(22.gif);
+ background-size: cover;
+  }
+  .tik{
+
+    script{
+        width: 100%;
+    }
+    width: 100%;
+    background-image: url(22.gif);
+    background-size: cover;
+    height:100%;
+  }
+
+.pop{
+    margin-left: 36%;
+    margin-top: -70%;
+    background-color: aqua;
+    width:500px;
+    height:450px;
+    transform: scale(0.4);
+    padding:25px;
+    visibility: hidden;
+    border-radius:5px;
+    position: relative;
+    transition: transform 0.45s, margin-top 0.5s;
+
+    p{
+        box-sizing: border-box;
+font-size: 26px;
+font-family: "Orbitron", sans-serif;
+padding-top: 120px;
+padding-bottom: 20px;
+    }
+
+    img{
+        transform: translate(130%,-10%);
+        background-color: rgb(8, 3, 3);
+        clip-path: circle();
+        position: absolute;
+    }
+
+    button{
+        transform: translate(150%,30%);
+        background-color: rgb(6, 11, 11);
+        color: back;
+        color:white;
+        padding: 25px;
+        border-radius: 25px;
+        font-family: "Orbitron", sans-serif;
+    }
+
+    button:hover{
+        background-color: rgba(51, 12, 12, 0.5);
+    }
+}
+
+.npop{
+    margin-top: -40%;
+    transform: scale(1);
+    visibility: visible;
+}
+
+@media all and (max-width:800px){
+  
+    .cop{
+        width:100%;
+        margin-top: 60px;
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .calculator{
+        transform: translate(0px,80px);
+        width: 100%;
+    }
+
+    #keys button{
+        width:60px;
+        height:70px;
+        font-size: 35px;
+        
+    }
+
+    #display{
+        font-size: 35px;
+        height:100px;
+    }
+
+    .tik{
+        margin-top: 100px;
+        height: 500px;
+        width: 100%;
+    }
+
+    .pop{
+        transform: translate(0px,-480px);
+        width: 100%;
+        height:440px;
+        margin-left: 0;
+        p{
+            font-size: 24px;
+        }
+       
+    }
+
+    .npop{
+        margin-top: -10%;
+    }
+
+    
+.links{
+    float:right;
+    ul{
+        margin-top:40px;
+        margin-left:0px;
+     right:0;   
+  
+    }
+
+    li a{
+        font-size: 20px;
+        float: right;
+        padding: 10px;
+    }
+
+}
+
+    .m2{
+       margin-left: 0px;
+       animation: none;
+       
+    }
+
+    .txp{
+        background-color: transparent;
+        margin-top: 100px;
+        width: 100%;
+        margin-left: 0px;
+        h1{
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 20px;
+            margin-top: 50px;
+            display: inline;
+        }
+    
+    }
+
+    .icon{
+        width:100%;
+        margin-bottom: 30px;
+        i{
+            font-size: 20px;
+        }
+    } 
+
+    .mi{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top:-700px;
+        gap:10px;
+        font-size: 20px;
+
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+}
+
+lord-icon.ldv{
+    margin-left: -300px;
+}
+
+.m7{
+    display: none;
+}
+}
+
